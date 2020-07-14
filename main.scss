@@ -1,0 +1,524 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  color: hsl(201, 11%, 66%);
+  font-family: "Bai Jamjuree";
+  line-height: 1.7;
+}
+
+.header {
+  width: 100%;
+  background-image: url(images/bg-header-desktop.png);
+  background-size: cover;
+  padding: 8rem 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  &-logo {
+    margin-bottom: 3.5rem;
+  }
+  &-heading {
+    margin-bottom: 1rem;
+  }
+  &-paragraph {
+    width: 38%;
+    margin: 0 auto;
+  }
+}
+.paragraph {
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  color: hsl(210, 10%, 33%);
+}
+h2 {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.3rem;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-family: inherit;
+    color: white;
+    box-shadow: 0 1rem 2.5rem rgba(158, 157, 157, 0.5);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  &:hover {
+    opacity: 0.95;
+  }
+  &:active {
+    box-shadow: 0 0.7rem 2.5rem rgba(158, 157, 157, 0.5);
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &-primary {
+    background-color: hsl(171, 66%, 44%);
+  }
+  &-secondary {
+    background-color: hsl(233, 100%, 69%);
+  }
+}
+
+.snippets-section {
+  margin-bottom: 9rem;
+  &-text {
+    text-align: center;
+    margin-bottom: 6rem;
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    & p {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  &-main-content {
+    display: flex;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4%;
+      width: 17%;
+      & .feature {
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+        p {
+          font-size: 0.8rem;
+          line-height: 1.8;
+        }
+      }
+    }
+
+    &-img {
+      margin-right: 5rem;
+      flex: 0 0 100px;
+    }
+  }
+}
+
+.section-access {
+  text-align: center;
+  margin-bottom: 7rem;
+  &-text {
+    margin-bottom: 4rem;
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    & p {
+      width: 38%;
+      margin: 0 auto;
+    }
+  }
+  &-img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.workflow-section {
+  margin-bottom: 9rem;
+  &-features {
+    display: flex;
+    justify-content: center;
+    &-feature {
+      text-align: center;
+      width: 20%;
+      & h3 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: hsl(210, 10%, 33%);
+        margin-bottom: 0.7rem;
+      }
+      & p {
+        font-size: 0.8rem;
+        line-height: 1.8;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+      & .icon {
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+
+  &-text {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.sponsors {
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 8%;
+    height: 8%;
+    &:not(:last-child) {
+      margin-right: 8rem;
+    }
+  }
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 8rem;
+  &-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 3rem;
+  width: 100%;
+  background-color: hsla(202, 21%, 77%, 0.342);
+
+  &-logo {
+    width: 3.5%;
+    height: 3.5%;
+  }
+  &-links {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0.8rem;
+
+    & a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: hsl(210, 10%, 33%);
+    }
+  }
+
+  &-social {
+    & img {
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .snippets-section {
+    &-main-content {
+      display: flex;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+        width: 27%;
+        & .feature {
+          &:not(:last-child) {
+            margin-bottom: 4rem;
+          }
+          p {
+            font-size: 0.8rem;
+            line-height: 1.8;
+          }
+        }
+      }
+
+      &-img {
+        margin-right: 5rem;
+        flex: 0 0 100px;
+      }
+    }
+  }
+
+  .section-access {
+    &-img {
+      width: 65%;
+      height: 65%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .snippets-section {
+    &-main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-text {
+        margin-top: 10%;
+        width: 42%;
+        & .feature {
+          & h2 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &-img {
+        transform: translateX(6%);
+        width: 65%;
+        height: 65%;
+      }
+    }
+  }
+
+  .header {
+    &-paragraph {
+      width: 48%;
+      margin: 4rem auto;
+    }
+  }
+
+  .cta {
+    & p {
+      width: 60%;
+      margin: 4rem auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .sponsors {
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+
+    & img {
+      width: 15%;
+      height: 15%;
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .header {
+    &-paragraph {
+      width: 60%;
+      margin: 4rem auto;
+    }
+  }
+
+  .section-access {
+    &-text {
+      margin-bottom: 4rem;
+
+      & p {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .snippets-section {
+    &-main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-text {
+        margin-top: 10%;
+        width: 80%;
+        & .feature {
+          & h2 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &-img {
+        transform: translateX(6%);
+        width: 65%;
+        height: 65%;
+      }
+    }
+  }
+
+  .workflow-section {
+    margin-bottom: 4rem;
+    &-features {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-feature {
+        text-align: center;
+        width: 60%;
+        margin-bottom: 6rem;
+        & h3 {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: hsl(210, 10%, 33%);
+          margin-bottom: 0.7rem;
+        }
+        & p {
+          font-size: 0.8rem;
+          line-height: 1.8;
+        }
+
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        & .icon {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &-text {
+      text-align: center;
+      margin-bottom: 7rem;
+
+      & h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-logo {
+      width: 15%;
+      height: 15%;
+      margin-bottom: 4rem;
+    }
+    &-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 4rem;
+
+      & a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: hsl(210, 10%, 33%);
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &-social {
+      & img {
+        cursor: pointer;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .section-access {
+    &-text {
+      margin-bottom: 4rem;
+
+      & p {
+        width: 58%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-logo {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 4rem;
+    }
+  }
+  .header {
+    &-paragraph {
+      width: 68%;
+      margin: 4rem auto;
+    }
+  }
+
+  html {
+    font-size: 80%;
+  }
+
+  .cta {
+    text-align: center;
+    margin-bottom: 8rem;
+    &-heading {
+      font-size: 2rem;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+  .btn {
+    display: block;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 82.5%;
+  }
+  .header {
+    &-paragraph {
+      width: 68%;
+      margin: 4rem auto;
+    }
+  }
+}
